@@ -25,12 +25,12 @@ var app = app || {};
 
   Article.fetchAll = callback => {
     $.get('/articles')
-    .then(
-      results => {
-        Article.loadAll(results);
-        callback();
-      }
-    )
+      .then(
+        results => {
+          Article.loadAll(results);
+          callback();
+        }
+      )
   };
 
   Article.numWordsAll = () => {
