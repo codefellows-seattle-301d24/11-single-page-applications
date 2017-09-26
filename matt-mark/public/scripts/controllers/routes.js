@@ -2,7 +2,8 @@
 var app = app || {};
 
 // DONE?: Configure routes for this app with page.js, by registering each URL your app can handle, linked to a single controller function to handle it. Note that these routes do not need to wrapped in an IIFE.
-page('/', app.Article.fetchAll);
+page('/', app.articleController.showHome);
+page('/about', app.showAbout);
 page('/new', app.Article.insertRecord);
 page('/admin', app.adminView.initAdminPage);
 
