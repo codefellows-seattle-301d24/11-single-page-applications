@@ -1,14 +1,8 @@
 'use strict';
 var app = app || {};
 
-page('/', () => {
-  $('main').hide();
-  $('#articles').fadeIn();
-});
-page('/about', () => {
-  $('main').hide();
-  $('#about').fadeIn();
-});
+page('/', app.articleController.init);
+page('/about', app.aboutController.init);
 page('*', () => {
   $('main').hide();
   $('main').append('<h1>No such page, my guy</h1>')

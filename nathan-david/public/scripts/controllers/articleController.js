@@ -3,7 +3,7 @@ var app = app || {};
 
 (function(module) {
   const articleController = {};
-  articleController.init = function() {
+  articleController.init = () => {
     $('main').hide();
     $('#articles').fadeIn();
   }
