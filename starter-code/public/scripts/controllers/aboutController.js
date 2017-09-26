@@ -10,6 +10,6 @@ var app = app || {};
     $('main section').hide()
     $('#about').show()
   }
-  aboutController.showAbout();
+
   module.aboutController = aboutController;
 })(app);

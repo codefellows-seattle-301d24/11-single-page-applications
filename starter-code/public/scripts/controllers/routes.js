@@ -7,8 +7,8 @@ var app = app || {};
 
 
 page('/');
-page('/about', aboutController.showAbout );
-page('/article', articleController.articleCreation);
+page('/about', app.aboutController.showAbout );
+page('/article', app.articleController.articleCreation);
 page();
 
 // use Page.js to do routing
